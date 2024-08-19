@@ -23,7 +23,13 @@ namespace Task1.Controllers
         [HttpGet("{id}")]
         public IActionResult Product(int id)
         {
-            var data = _db.Products.Find(id);
+            var data = _db.Products.Select(p => new
+            {
+                p.ProductId,
+                p.CategoryId,
+                p.Category,
+                p.Description
+            });
             return Ok(data);
         }
     }

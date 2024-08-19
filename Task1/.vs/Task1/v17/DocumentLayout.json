@@ -1,30 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\",
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\WebAPI-Tasks\\Task1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|c:\\users\\orange\\desktop\\webapi tasks\\task1\\task1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|c:\\users\\orange\\desktop\\webapi-tasks\\task1\\task1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|solutionrelative:task1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|c:\\users\\orange\\desktop\\webapi tasks\\task1\\task1\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|solutionrelative:task1\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|c:\\users\\orange\\desktop\\webapi tasks\\task1\\task1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|solutionrelative:task1\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|c:\\users\\orange\\desktop\\webapi tasks\\task1\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|c:\\users\\orange\\desktop\\webapi tasks\\task1\\task1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|solutionrelative:task1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|c:\\users\\orange\\desktop\\webapi tasks\\task1\\task1\\models\\ecommercecorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FCC2612-C1CA-4BB1-9D71-E44359D16725}|Task1\\Task1.csproj|solutionrelative:task1\\models\\ecommercecorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,78 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Controllers\\ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\WebAPI-Tasks\\Task1\\Task1\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Task1\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\WebAPI-Tasks\\Task1\\Task1\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Task1\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAYwB4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T14:07:12.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Task1\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Task1\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:03:03.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "Task1\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "Task1\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwA8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T13:50:59.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Program.cs",
-              "RelativeDocumentMoniker": "Task1\\Program.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Program.cs",
-              "RelativeToolTip": "Task1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T13:47:49.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\appsettings.json",
-              "RelativeDocumentMoniker": "Task1\\appsettings.json",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\appsettings.json",
-              "RelativeToolTip": "Task1\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-19T13:47:05.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EcommerceCoreContext.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Models\\EcommerceCoreContext.cs",
-              "RelativeDocumentMoniker": "Task1\\Models\\EcommerceCoreContext.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\WebAPI Tasks\\Task1\\Task1\\Models\\EcommerceCoreContext.cs",
-              "RelativeToolTip": "Task1\\Models\\EcommerceCoreContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T13:46:54.402Z",
               "EditorCaption": ""
             }
           ]
