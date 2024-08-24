@@ -27,15 +27,31 @@ namespace Task1.Controllers
             var data = _db.Orders.Find(id);
             return Ok(data);
         }
-        
+        [HttpGet]
+        [Route("OrderName")]
+        public IActionResult Get([FromQuery]int year , [FromQuery] int month , [FromQuery] int day) 
+        {
+            var date = new DateOnly(year, month, day);
+            var data = _db.Orders.Where(c=>c.OrderDate == date).ToList();
+            return Ok(data);
+        }
         [HttpDelete]
         [Route("Delete/{id}")]
         public IActionResult Delete(int id)
         {
-            var data = _db.Orders.Find(id);
-            _db.Users.Remove(data);
+            var order = _db.Orders.FirstOrDefault(o => o.OrderId == id);
+
+            if (order == null)
+            {
+                return NotFound(); 
+            }
+
+            _db.Orders.Remove(order);
+
             _db.SaveChanges();
-            return Ok(data);
+
+            return Ok(order);
         }
+
     }
 }
