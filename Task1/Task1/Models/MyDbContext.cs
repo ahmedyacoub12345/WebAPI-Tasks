@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Task1.Models;
 
-public partial class EcommerceCoreContext : DbContext
+public partial class MyDbContext : DbContext
 {
-    public EcommerceCoreContext()
+    public MyDbContext()
     {
     }
 
-    public EcommerceCoreContext(DbContextOptions<EcommerceCoreContext> options)
+    public MyDbContext(DbContextOptions<MyDbContext> options)
         : base(options)
     {
     }
