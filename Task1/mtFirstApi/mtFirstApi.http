@@ -1,0 +1,6 @@
+@mtFirstApi_HostAddress = http://localhost:5219
+
+GET {{mtFirstApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
