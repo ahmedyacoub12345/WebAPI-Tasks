@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Task1.DTOs;
 using Task1.Models;
 
 namespace Task1.Controllers
@@ -25,14 +26,14 @@ namespace Task1.Controllers
         [Route("Product/{id}")]
         public IActionResult Product(int id)
         {
-            var data = _db.Products.Where(p=> p.ProductId ==id);
+            var data = _db.Products.Where(p => p.ProductId == id);
             return Ok(data);
         }
         [HttpGet]
         [Route("products/{id:int:max(10)}")]
-        public IActionResult Product(int id,[FromQuery] string name)
+        public IActionResult Product(int id, [FromQuery] string name)
         {
-            var data = _db.Products.Where(c=>c.ProductId==id && c.ProductName==name);
+            var data = _db.Products.Where(c => c.ProductId == id && c.ProductName == name);
             return Ok(data);
         }
         [HttpDelete]
@@ -50,5 +51,68 @@ namespace Task1.Controllers
             var data = _db.Products.Where(p => p.CategoryId == id).ToList();
             return Ok(data);
         }
+        [HttpGet]
+        [Route("Sorting/")]
+        public IActionResult ProductSort()
+        {
+            var data = _db.Products.OrderByDescending(x =>  Convert.ToDecimal( x.Price)).ToList();
+            return Ok(data);
+        }
+
+        [HttpPost]
+        [Route ("AddProducts")]
+        public IActionResult AddProducts([FromForm] ProductRequestDTO product)
+        {
+            var uploadedFolder = Path.Combine(Directory.GetCurrentDirectory(), "UploadProductImage");
+            if (!Directory.Exists(uploadedFolder))
+            {
+                Directory.CreateDirectory(uploadedFolder);
+            }
+            var fileImage = Path.Combine(uploadedFolder, product.ProductImage.FileName);
+            using (var stream = new FileStream(fileImage, FileMode.Create))
+            {
+                product.ProductImage.CopyToAsync(stream);
+            }
+            var dataResponse = new Product
+            {
+                ProductName = product.ProductName,
+                Description = product.Description,
+                Price = product.Price,
+                CategoryId = product.CategoryId,
+                ProductImage = product.ProductImage.FileName
+            };
+
+            _db.Products.Add(dataResponse);
+            _db.SaveChanges();
+
+            return Ok(dataResponse);
+        }
+        [HttpPut]
+        [Route ("UpdateProduct/{id:int}")]
+        public IActionResult update(int id, [FromForm] ProductRequestDTO product)
+        {
+            var uploadedFolder = Path.Combine(Directory.GetCurrentDirectory(), "UploadProductImage");
+            if (!Directory.Exists(uploadedFolder))
+            {
+                Directory.CreateDirectory(uploadedFolder);
+            }
+            var fileImage = Path.Combine(uploadedFolder, product.ProductImage.FileName);
+            using (var stream = new FileStream(fileImage, FileMode.Create))
+            {
+                product.ProductImage.CopyToAsync(stream);
+            }
+            var data = _db.Products.Find(id);
+            data.ProductName = product.ProductName;
+            data.Description = product.Description;
+            data.Price = product.Price;
+            data.CategoryId = product.CategoryId;
+            data.ProductImage = product.ProductImage.FileName;
+          
+            _db.Products.Update(data);
+            _db.SaveChanges();
+            return Ok(data);
+
+        }
+
     }
 }

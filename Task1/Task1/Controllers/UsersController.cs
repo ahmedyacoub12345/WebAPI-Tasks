@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Task1.DTOs;
 using Task1.Models;
 
 namespace Task1.Controllers
@@ -42,6 +43,35 @@ namespace Task1.Controllers
             _db.Users.Remove(data);
             _db.SaveChanges();
             return Ok(data);
+        }
+        [HttpPost]
+        [Route("AddUsers")]
+        public IActionResult AddUsers([FromForm] UserRequestDTO user )
+        {
+
+            var dataResponse = new User
+            {
+                Username = user.Username,
+                Password = user.Password,
+                Email = user.Email
+            };
+
+            _db.Users.Add(dataResponse);
+            _db.SaveChanges();
+            return Ok(user);
+
+        }
+        [HttpPut]
+        [Route ("UpdateUser/{id:int}")]
+        public IActionResult UpdateUser(int id , [FromForm]UserRequestDTO user)
+        {
+            var data = _db.Users.Find(id);
+            data.Username = user.Username;
+            data.Password = user.Password;
+            data.Email = user.Email;
+            _db.Users.Update(data);
+            _db.SaveChanges();
+            return Ok(user);
         }
     }
 }

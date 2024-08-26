@@ -13,7 +13,7 @@ async function GetOrders() {
 <p class="card-text"><strong>Description :</strong> <br>${product.description}</p>
 <p ><strong>Price:</strong> <br>${product.price} $</p>
 <button value="${product.productId}" onclick="saveId(this)" class="btn btn-primary">Add To Cart</button>
-      <a href="../categotyDetails/category.html" onclick="setlocal(${product.productId})" class="btn btn-primary">detsils</a>
+<a href="../categotyDetails/category.html" onclick="setlocal(${product.productId})" class="btn btn-primary">Details</a>
 
 </div>
 </div>`;
