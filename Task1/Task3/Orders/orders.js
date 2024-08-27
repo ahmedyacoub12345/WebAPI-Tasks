@@ -20,7 +20,7 @@ async function GetOrders() {
   });
 }
 function setlocal(id) {
-  localStorage.categoryId = id;
+  localStorage.productId = id;
 }
 function saveId(button) {
   let GetId = button.value;

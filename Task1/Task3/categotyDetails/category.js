@@ -13,7 +13,7 @@ async function getCategory() {
   <h5 class="card-title"><strong>Name : </strong><br>${product.productName}</h5>
   <p class="card-text"><strong>Description :</strong> <br>${product.description}</p>
   <p ><strong>Price:</strong> <br>${product.price} $</p>
-      <a href="categotyDetails/category.html" onclick="setlocal(${product.productId})" class="btn btn-primary">Add To Cart</a>
+      <a href="../EditProduct/EditProduct.html" onclick="setlocal(${product.productId})" class="btn btn-primary">Edit</a>
   </div>
   </div>`;
   });
