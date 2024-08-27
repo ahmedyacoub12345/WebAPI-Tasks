@@ -11,9 +11,12 @@ async function getCategory() {
       <th scope="row">${category.categoryId}</th>
       <td>${category.categoryName}</td>
       <td><img src="/images/${category.categoryImage}" style="height: 100px; width: 100px;" class="card-img-top" alt="${category.categoryImage}"></td>
-      <td><a href="/CreateProduct/Create.html">Add Category</a></td>
+      <td><a href="/Dashboard/EditCategory/EditCategory.html" onclick = "setLocalStorage(${category.categoryId})">Edit</a></td>
     </tr>
     `;
   });
+}
+function setLocalStorage(id) {
+  localStorage.categoryId = id;
 }
 getCategory();

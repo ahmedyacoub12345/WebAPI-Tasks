@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Dashboard/CategoriesDashboard/style.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h2>Some text</h2>
+        <hr />
+        <div id="wrapper">
+          <!-- Sidebar -->
+          <div id="sidebar-wrapper">
+            <ul class="sidebar-nav" style="margin-left: 0">
+              <li class="sidebar-brand">
+                <a
+                  href="#menu-toggle"
+                  id="menu-toggle"
+                  style="margin-top: 20px; float: right"
+                >
+                  <i
+                    class="fa fa-bars"
+                    style="font-size: 20px !important"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/Dashboard/CategoriesDashboard/CategoriesDashboard.html"
+                  ><span style="margin-left: 10px">Category</span></a
+                >
+              </li>
+              <li>
+                <a href="/Dashboard/ProductsDashboard/ProductsDashboard.html"
+                  ><span style="margin-left: 10px">Product</span></a
+                >
+              </li>
+              <li>
+                <a href="/CreateProduct/Create.html"
+                  ><span style="margin-left: 10px">Add Category</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- /#sidebar-wrapper -->
+
+          <!-- Page Content -->
+          <div id="page-content-wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12">
+                  <form id="form">
+                    <div class="mb-3">
+                      <label for="options" class="form-label"
+                        >Select Category:</label
+                      >
+                      <select
+                        class="form-select"
+                        name="option"
+                        id="option"
+                      ></select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="ProductName" class="form-label"
+                        >Product Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="ProductName"
+                        name="ProductName"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Price" class="form-label">Price</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="Price"
+                        name="Price"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Description" class="form-label"
+                        >Description</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Description"
+                        name="Description"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="ProductImage" class="form-label"
+                        >Product Image</label
+                      >
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="ProductImage"
+                        name="ProductImage"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      onclick="AddProduct()"
+                    >
+                      Add Product
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /#page-content-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+      </div>
+    </div>
+    <script src="AddProduct.js"></script>
+  </body>
+</html>
