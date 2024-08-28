@@ -13,7 +13,7 @@ async function GetOrders() {
       <td>${product.price}</td>
       <td>${product.categoryId}</td>
       <td><img src="/images/${product.productImage}" style="height: 100px; width: 100px;" class="card-img-top" alt="${product.productImage}"></td>
-      <td><a href="/EditProduct/EditProduct.html">Edit</a></td>
+      <td><a href="/Dashboard/Editproduct/EditProduct.html">Edit</a></td>
     </tr>
       `;
   });

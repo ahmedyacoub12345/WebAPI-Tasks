@@ -10,9 +10,10 @@ async function getCategory() {
 }
 getCategory();
 
+let N = localStorage.getItem("productId");
+let URL = `https://localhost:44349/api/Products/UpdateProduct/${N}`;
 async function AddProduct() {
   debugger;
-  const url1 = "https://localhost:44349/api/Products/AddProducts";
   event.preventDefault();
   var form = document.getElementById("form");
   var formswager = new FormData(form); //(swagger) الموجودة ب ([FromForm]) هذه تكافي ال
@@ -21,10 +22,9 @@ async function AddProduct() {
 
   formswager.append("categoryId", categoryId);
 
-  let response1 = await fetch(url1, {
-    method: "POST",
+  let response = await fetch(URL, {
+    method: "PUT",
     body: formswager,
   });
-  console.log(response1);
-  alert("Successfuly Adding Product!");
+  alert("Successfuly Editing Product!");
 }
