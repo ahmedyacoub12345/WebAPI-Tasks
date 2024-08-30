@@ -12,7 +12,7 @@ getCategory();
 
 let N = localStorage.getItem("productId");
 let URL = `https://localhost:44349/api/Products/UpdateProduct/${N}`;
-async function AddProduct() {
+async function EditProduct() {
   debugger;
   event.preventDefault();
   var form = document.getElementById("form");

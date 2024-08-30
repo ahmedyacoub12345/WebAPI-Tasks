@@ -1,0 +1,109 @@
+2024-08-29 12:35:23.690 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 12:35:23.711 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 12:35:23.727 +03:00 [INF] Hosting environment: Development
+2024-08-29 12:35:23.727 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 12:35:23.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 196.1065ms
+2024-08-29 12:35:23.912 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 12:35:23.918 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 3.2697ms
+2024-08-29 12:35:23.926 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 12:35:23.961 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.2404ms
+2024-08-29 12:35:24.064 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 12:35:24.166 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.1804ms
+2024-08-29 12:35:41.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/7 - null null
+2024-08-29 12:35:41.757 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-08-29 12:35:41.770 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category(Int32) on controller Task1.Controllers.CategoriesController (Task1).
+2024-08-29 12:35:42.818 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryID] = @__p_0
+2024-08-29 12:35:42.830 +03:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-08-29 12:35:42.833 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 1060.5203ms
+2024-08-29 12:35:42.833 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-08-29 12:35:42.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/7 - 204 null null 1096.5249ms
+2024-08-29 12:49:22.942 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 12:49:22.956 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 12:49:22.967 +03:00 [INF] Hosting environment: Development
+2024-08-29 12:49:22.968 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 12:49:23.136 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 12:49:23.136 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 182.8144ms
+2024-08-29 12:49:23.136 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 12:49:23.141 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 4.9656ms
+2024-08-29 12:49:23.173 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.2536ms
+2024-08-29 12:49:23.211 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 12:49:23.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.1756ms
+2024-08-29 12:49:48.353 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Logger - null null
+2024-08-29 12:49:48.364 +03:00 [INF] Executing endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 12:49:48.372 +03:00 [INF] Route matched with {action = "GetData", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetData() on controller Task1.Controllers.LoggerController (Task1).
+2024-08-29 12:49:48.373 +03:00 [INF] Ahmed that excute to Log file ${ahmed.Length}
+2024-08-29 12:49:48.377 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String[]'.
+2024-08-29 12:49:48.382 +03:00 [INF] Executed action Task1.Controllers.LoggerController.GetData (Task1) in 7.9634ms
+2024-08-29 12:49:48.383 +03:00 [INF] Executed endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 12:49:48.383 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Logger - 200 null application/json; charset=utf-8 29.648ms
+2024-08-29 12:51:45.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Logger - null null
+2024-08-29 12:51:45.148 +03:00 [INF] Executing endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 12:51:45.149 +03:00 [INF] Route matched with {action = "GetData", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetData() on controller Task1.Controllers.LoggerController (Task1).
+2024-08-29 12:51:45.151 +03:00 [INF] Ahmed that excute to Log file ${ahmed.Length}
+2024-08-29 12:51:45.151 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String[]'.
+2024-08-29 12:51:45.152 +03:00 [INF] Executed action Task1.Controllers.LoggerController.GetData (Task1) in 1.4155ms
+2024-08-29 12:51:45.152 +03:00 [INF] Executed endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 12:51:45.152 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Logger - 200 null application/json; charset=utf-8 10.0869ms
+2024-08-29 12:52:32.300 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 12:52:32.318 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 12:52:32.328 +03:00 [INF] Hosting environment: Development
+2024-08-29 12:52:32.328 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 12:52:32.503 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 12:52:32.504 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 12:52:32.508 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 4.6362ms
+2024-08-29 12:52:32.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 193.0309ms
+2024-08-29 12:52:32.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.3202ms
+2024-08-29 12:52:32.576 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 12:52:32.668 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.548ms
+2024-08-29 12:52:38.878 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Logger - null null
+2024-08-29 12:52:38.885 +03:00 [INF] Executing endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 12:52:38.901 +03:00 [INF] Route matched with {action = "GetData", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetData() on controller Task1.Controllers.LoggerController (Task1).
+2024-08-29 12:52:38.903 +03:00 [INF] Ahmed that excute to Log file 1
+2024-08-29 12:52:38.907 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String[]'.
+2024-08-29 12:52:38.914 +03:00 [INF] Executed action Task1.Controllers.LoggerController.GetData (Task1) in 10.1909ms
+2024-08-29 12:52:38.914 +03:00 [INF] Executed endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 12:52:38.914 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Logger - 200 null application/json; charset=utf-8 36.1506ms
+2024-08-29 13:22:20.578 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 13:22:20.593 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 13:22:20.602 +03:00 [INF] Hosting environment: Development
+2024-08-29 13:22:20.602 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 13:22:20.784 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 194.123ms
+2024-08-29 13:22:20.786 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 13:22:20.795 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 5.2022ms
+2024-08-29 13:22:20.806 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 13:22:20.836 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.9217ms
+2024-08-29 13:22:20.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 13:22:21.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.0198ms
+/////////////////////////////////2024-08-29 13:22:44.140 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 13:22:44.155 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 13:22:44.165 +03:00 [INF] Hosting environment: Development
+2024-08-29 13:22:44.166 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 13:22:44.345 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 13:22:44.345 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 13:22:44.347 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 194.7913ms
+2024-08-29 13:22:44.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 4.7568ms
+2024-08-29 13:22:44.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.919ms
+2024-08-29 13:22:44.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 13:22:44.505 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.527ms
+2024-08-29 13:22:50.830 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Logger - null null
+2024-08-29 13:22:50.837 +03:00 [INF] Executing endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 13:22:50.845 +03:00 [INF] Route matched with {action = "GetData", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetData() on controller Task1.Controllers.LoggerController (Task1).
+2024-08-29 13:22:50.846 +03:00 [INF] Ahmed that excute to Log file 1
+2024-08-29 13:22:50.848 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String[]'.
+2024-08-29 13:22:50.855 +03:00 [INF] Executed action Task1.Controllers.LoggerController.GetData (Task1) in 7.5808ms
+2024-08-29 13:22:50.855 +03:00 [INF] Executed endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 13:22:50.855 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Logger - 200 null application/json; charset=utf-8 25.3401ms
+2024-08-29 15:56:47.743 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 15:56:47.780 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 15:56:47.785 +03:00 [INF] Hosting environment: Development
+2024-08-29 15:56:47.786 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 15:56:48.909 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 1139.5358ms
+2024-08-29 15:56:48.913 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 15:56:48.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 15:56:48.922 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 12.7131ms
+2024-08-29 15:56:49.005 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.6121ms
+2024-08-29 15:56:49.083 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 15:56:49.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 279.9469ms

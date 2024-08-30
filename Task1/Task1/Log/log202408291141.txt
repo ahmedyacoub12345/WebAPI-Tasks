@@ -1,0 +1,19 @@
+2024-08-29 11:41:14.502 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 11:41:14.518 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 11:41:14.529 +03:00 [INF] Hosting environment: Development
+2024-08-29 11:41:14.530 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 11:41:14.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 208.6473ms
+2024-08-29 11:41:14.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 11:41:14.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 4.0007ms
+2024-08-29 11:41:14.746 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 11:41:14.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.8834ms
+2024-08-29 11:41:14.911 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 11:41:15.011 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.4225ms
+2024-08-29 11:41:28.757 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Logger - null null
+2024-08-29 11:41:28.764 +03:00 [INF] Executing endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 11:41:28.776 +03:00 [INF] Route matched with {action = "GetData", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetData() on controller Task1.Controllers.LoggerController (Task1).
+2024-08-29 11:41:28.777 +03:00 [INF] Ahmed that excute to Log file
+2024-08-29 11:41:28.780 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-08-29 11:41:28.782 +03:00 [INF] Executed action Task1.Controllers.LoggerController.GetData (Task1) in 3.3023ms
+2024-08-29 11:41:28.782 +03:00 [INF] Executed endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 11:41:28.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Logger - 200 null null 25.7661ms

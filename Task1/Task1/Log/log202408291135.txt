@@ -1,0 +1,11 @@
+2024-08-29 11:35:05.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/cartItem/GetCarts - null null
+2024-08-29 11:35:05.312 +03:00 [INF] Executing endpoint 'Task1.Controllers.cartItemController.GetCarts (Task1)'
+2024-08-29 11:35:05.326 +03:00 [INF] Route matched with {action = "GetCarts", controller = "cartItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCarts() on controller Task1.Controllers.cartItemController (Task1).
+2024-08-29 11:35:06.190 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Task1.DTOs.cartItemResponseDTO, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-29 11:35:06.909 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartID] AS [CartId], [c].[CartItemID] AS [CartItemId], [c].[ProductID] AS [ProductId], [c].[Quantity], [p].[CategoryID] AS [CategoryId], [p].[ProductName], [p].[Description], [p].[Price]
+FROM [CartItems] AS [c]
+LEFT JOIN [Products] AS [p] ON [c].[ProductID] = [p].[ProductID]
+2024-08-29 11:35:06.952 +03:00 [INF] Executed action Task1.Controllers.cartItemController.GetCarts (Task1) in 1624.1505ms
+2024-08-29 11:35:06.953 +03:00 [INF] Executed endpoint 'Task1.Controllers.cartItemController.GetCarts (Task1)'
+2024-08-29 11:35:06.958 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/cartItem/GetCarts - 200 null application/json; charset=utf-8 1658.5578ms

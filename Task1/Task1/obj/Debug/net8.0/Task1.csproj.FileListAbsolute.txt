@@ -273,3 +273,12 @@ C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\obj\Debug\net8.0\refint\Task1.d
 C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\obj\Debug\net8.0\Task1.pdb
 C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\obj\Debug\net8.0\Task1.genruntimeconfig.cache
 C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\obj\Debug\net8.0\ref\Task1.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1\bin\Debug\net8.0\Serilog.Sinks.File.dll

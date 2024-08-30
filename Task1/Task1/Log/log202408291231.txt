@@ -1,0 +1,22 @@
+2024-08-29 12:31:14.094 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 12:31:14.126 +03:00 [INF] Hosting environment: Development
+2024-08-29 12:31:14.127 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 12:31:14.260 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 12:31:14.575 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 319.7158ms
+2024-08-29 12:31:14.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 12:31:14.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 12:31:14.594 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 2.905ms
+2024-08-29 12:31:14.625 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.6785ms
+2024-08-29 12:31:14.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 12:31:14.774 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.0075ms
+2024-08-29 12:31:29.636 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/4 - null null
+2024-08-29 12:31:29.647 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-08-29 12:31:29.662 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category(Int32) on controller Task1.Controllers.CategoriesController (Task1).
+2024-08-29 12:31:31.647 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryID] = @__p_0
+2024-08-29 12:31:31.668 +03:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-08-29 12:31:31.671 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 2006.0329ms
+2024-08-29 12:31:31.671 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-08-29 12:31:31.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/4 - 204 null null 2040.4549ms

@@ -1,0 +1,19 @@
+2024-08-29 11:44:11.659 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-29 11:44:11.674 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-08-29 11:44:11.684 +03:00 [INF] Hosting environment: Development
+2024-08-29 11:44:11.685 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-08-29 11:44:11.862 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-08-29 11:44:11.862 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-29 11:44:11.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 192.2479ms
+2024-08-29 11:44:11.877 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 13.9648ms
+2024-08-29 11:44:11.896 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.2772ms
+2024-08-29 11:44:11.928 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-08-29 11:44:12.028 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.4608ms
+2024-08-29 11:44:18.174 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Logger - null null
+2024-08-29 11:44:18.183 +03:00 [INF] Executing endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 11:44:18.196 +03:00 [INF] Route matched with {action = "GetData", controller = "Logger"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetData() on controller Task1.Controllers.LoggerController (Task1).
+2024-08-29 11:44:18.198 +03:00 [INF] Ahmed that excute to Log file 1
+2024-08-29 11:44:18.201 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String[]'.
+2024-08-29 11:44:18.207 +03:00 [INF] Executed action Task1.Controllers.LoggerController.GetData (Task1) in 9.3598ms
+2024-08-29 11:44:18.208 +03:00 [INF] Executed endpoint 'Task1.Controllers.LoggerController.GetData (Task1)'
+2024-08-29 11:44:18.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Logger - 200 null application/json; charset=utf-8 33.3743ms
