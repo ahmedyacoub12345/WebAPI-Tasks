@@ -18,7 +18,8 @@ namespace Task1.Controllers
         [Route("AllProducts/Product")]
         public IActionResult Product()
         {
-            var data = _db.Products.ToList();
+            var data = _db.Products.OrderByDescending(x => x.ProductName).ToList().TakeLast(5);
+            //var d = data.OrderByDescending(x=> x.ProductName).TakeLast(5);
             return Ok(data);
         }
 
