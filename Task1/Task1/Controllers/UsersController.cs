@@ -98,7 +98,7 @@ namespace Task1.Controllers
                 return sb.ToString();
             }
         }
-
+     
 
         [HttpPost("Register")]
         public IActionResult Register([FromForm] UserRequestDTO user)
@@ -160,6 +160,34 @@ namespace Task1.Controllers
             }
             return BadRequest("input is null");
 
+        }
+        [HttpPost("LoginPost")]
+        public IActionResult LoginPost([FromBody] LoginDTO user)
+        {
+            if (user == null)
+            {
+
+                return BadRequest("input can't be null");
+
+            }
+            var record = _db.Users.FirstOrDefault(u => u.Username == user.Username);
+            if (record != null && user.Password != null)
+            {
+
+                var input_pass = Hashing(user.Password);
+                var real_pass = record.Password;
+
+                if (real_pass != input_pass)
+                {
+                    return BadRequest("uncorrect password");
+                }
+                else
+                {
+                    return Ok(record);
+                }
+            }
+
+            return BadRequest("input is null");
         }
 
     }
