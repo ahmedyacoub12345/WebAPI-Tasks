@@ -1,6 +1,15 @@
 async function GetOrders() {
+  debugger;
   const url = "https://localhost:44349/api/Products/AllProducts/Product";
-  const response = await fetch(url);
+  var getToken = localStorage.getItem("Token");
+  if (getToken == null) {
+    alert("Please Login");
+  }
+  var response = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${getToken}`,
+    },
+  });
   const data = await response.json();
   console.log(data);
   var info = document.getElementById("Products");

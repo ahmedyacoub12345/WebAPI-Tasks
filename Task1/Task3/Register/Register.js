@@ -1,9 +1,8 @@
-async function Register(event) {
-  event.preventDefault(); // Prevent default form submission
+async function Register() {
+  event.preventDefault();
 
   let url = "https://localhost:44349/api/Users/Register";
 
-  // Create FormData from the form element
   const formData = new FormData(document.getElementById("RegisterForm"));
 
   const response = await fetch(url, {
@@ -24,5 +23,4 @@ async function Register(event) {
   }
 }
 
-// Attach Register function to form submission
 document.getElementById("RegisterForm").addEventListener("submit", Register);

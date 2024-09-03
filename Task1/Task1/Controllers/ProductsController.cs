@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Task1.DTOs;
 using Task1.Models;
@@ -16,6 +17,7 @@ namespace Task1.Controllers
         }
         [HttpGet]
         [Route("AllProducts/Product")]
+        [Authorize]
         public IActionResult Product()
         {
             var data = _db.Products.OrderByDescending(x => x.ProductName).ToList().TakeLast(5);

@@ -1,6 +1,6 @@
 async function ValidateEmail() {
   event.preventDefault();
-
+  debugger;
   let url = "https://localhost:44349/api/Users/LoginPost";
   const email = document.getElementById("Email").value;
   const password = document.getElementById("Password").value;
@@ -19,6 +19,7 @@ async function ValidateEmail() {
   const result = await response.json();
 
   if (response.ok) {
+    localStorage.setItem("Token", result.token);
     console.log("Login successful:", result);
     alert("Login Successfuly");
     window.location.href = "/Categories/WebApiToFront.html";

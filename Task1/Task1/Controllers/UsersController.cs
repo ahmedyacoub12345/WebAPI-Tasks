@@ -13,9 +13,11 @@ namespace Task1.Controllers
     public class UsersController : ControllerBase
     {
         private EcommerceCoreContext _db;
-        public UsersController(EcommerceCoreContext db)
+        private readonly TokenGenerator _tokenGenerator;
+        public UsersController(EcommerceCoreContext db , TokenGenerator tokenGenerator)
         {
             _db = db;
+            _tokenGenerator = tokenGenerator;
         }
         [HttpGet]
         [Route("AllUsers/User")]
@@ -155,7 +157,9 @@ namespace Task1.Controllers
                 }
                 else
                 {
-                    return Ok(record);
+                    var roles = _db.UserRoles.Where(x => x.UserId == user.Id).Select(ur => ur.Role).ToList();
+                    var token = _tokenGenerator.GenerateToken(user.Username, roles);
+                    return Ok(new { Token = token, user.Id });
                 }
             }
             return BadRequest("input is null");
@@ -183,11 +187,45 @@ namespace Task1.Controllers
                 }
                 else
                 {
-                    return Ok(record);
+                    var roles = _db.UserRoles.Where(x => x.UserId == user.Id).Select(ur => ur.Role).ToList();
+                    var token = _tokenGenerator.GenerateToken(user.Username, roles);
+                    return Ok(new { Token = token ,user.Id});
                 }
             }
 
             return BadRequest("input is null");
+        }
+        [HttpPost("ProblemSolving")]
+        public IActionResult ProblemSolving([FromForm] string text)
+        {
+
+            var numbers = text.Trim().Split(' ').Select(n => int.Parse(n)).ToList();
+
+            Dictionary<int, int> result = new Dictionary<int, int>();
+
+            // { key : value }
+
+            foreach (var number in numbers)
+            {
+                if (result.ContainsKey(number))
+                {
+                    result[number]++; // this is mean result[number] = result[number] + 1 ;
+                }
+                else
+                {
+                    result.Add(number, 1);
+                }
+            }
+
+            foreach (var item in result)
+            {
+                if (item.Value % 2 == 1)
+                {
+                    return Ok(item);
+                }
+            }
+
+            return Ok(result);
         }
 
     }
