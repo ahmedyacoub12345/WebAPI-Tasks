@@ -1,0 +1,10 @@
+.data {
+  display: none;
+}
+.g-signin2 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  margin-top: 10%;
+  margin-left: 30%;
+}

@@ -927,3 +927,234 @@ WHERE [p].[ProductID] = @__id_0
 2024-09-03 16:37:11.689 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - null null
 2024-09-03 16:37:11.689 +03:00 [INF] CORS policy execution successful.
 2024-09-03 16:37:11.689 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - 204 null null 0.4826ms
+2024-09-03 16:41:21.139 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-03 16:41:21.277 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-03 16:41:21.278 +03:00 [INF] Hosting environment: Development
+2024-09-03 16:41:21.278 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\WebAPI-Tasks\Task1\Task1
+2024-09-03 16:41:21.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/index.html - null null
+2024-09-03 16:41:22.056 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/index.html - 200 null text/html;charset=utf-8 750.8937ms
+2024-09-03 16:41:22.064 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-03 16:41:22.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/_vs/browserLink - null null
+2024-09-03 16:41:22.069 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_framework/aspnetcore-browser-refresh.js - 200 13746 application/javascript; charset=utf-8 5.174ms
+2024-09-03 16:41:22.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.2213ms
+2024-09-03 16:41:22.145 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - null null
+2024-09-03 16:41:22.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 121.1233ms
+2024-09-03 16:41:31.281 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - null null
+2024-09-03 16:41:31.285 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:41:31.346 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:41:31.359 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category() on controller Task1.Controllers.CategoriesController (Task1).
+2024-09-03 16:41:32.928 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-09-03 16:41:33.016 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - null null
+2024-09-03 16:41:33.018 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:41:33.020 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:41:33.020 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category() on controller Task1.Controllers.CategoriesController (Task1).
+2024-09-03 16:41:33.031 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Task1.Models.Category, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 16:41:33.040 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-09-03 16:41:33.041 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Task1.Models.Category, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 16:41:33.054 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 30.0912ms
+2024-09-03 16:41:33.054 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 1692.7687ms
+2024-09-03 16:41:33.054 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:41:33.054 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:41:33.067 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - 499 null application/json; charset=utf-8 1786.0664ms
+2024-09-03 16:41:33.067 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - 200 null application/json; charset=utf-8 51.3087ms
+2024-09-03 16:41:35.361 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 16:41:35.362 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:41:35.364 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - 204 null null 2.2438ms
+2024-09-03 16:41:35.365 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 16:41:35.366 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:41:35.422 +03:00 [INF] Executing endpoint 'Task1.Controllers.ProductsController.Product (Task1)'
+2024-09-03 16:41:35.423 +03:00 [INF] Route matched with {action = "Product", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Product() on controller Task1.Controllers.ProductsController (Task1).
+2024-09-03 16:41:35.567 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductImage], [p].[ProductName]
+FROM [Products] AS [p]
+ORDER BY [p].[ProductName] DESC
+2024-09-03 16:41:35.594 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+<TakeRangeFromEndIterator>d__281`1[[Task1.Models.Product, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 16:41:35.600 +03:00 [INF] Executed action Task1.Controllers.ProductsController.Product (Task1) in 176.9201ms
+2024-09-03 16:41:35.600 +03:00 [INF] Executed endpoint 'Task1.Controllers.ProductsController.Product (Task1)'
+2024-09-03 16:41:35.601 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - 200 null application/json; charset=utf-8 235.3962ms
+2024-09-03 16:41:57.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - null null
+2024-09-03 16:41:57.485 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:41:57.485 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:41:57.485 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category() on controller Task1.Controllers.CategoriesController (Task1).
+2024-09-03 16:41:57.487 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-09-03 16:41:57.488 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Task1.Models.Category, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 16:41:57.489 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 3.951ms
+2024-09-03 16:41:57.489 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:41:57.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - 200 null application/json; charset=utf-8 5.6474ms
+2024-09-03 16:42:01.908 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 16:42:01.908 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:01.908 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - 204 null null 0.6367ms
+2024-09-03 16:42:01.910 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 16:42:01.910 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:01.912 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2024-09-03 16:42:02.023 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2024-09-03 16:42:02.026 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-09-03 16:42:02.031 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-09-03 16:42:02.032 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - 401 null null 121.9327ms
+2024-09-03 16:42:09.826 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Users/LoginPost - null null
+2024-09-03 16:42:09.827 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:09.828 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Users/LoginPost - 204 null null 1.828ms
+2024-09-03 16:42:09.837 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44349/api/Users/LoginPost - application/json 40
+2024-09-03 16:42:09.838 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:09.839 +03:00 [INF] Executing endpoint 'Task1.Controllers.UsersController.LoginPost (Task1)'
+2024-09-03 16:42:09.852 +03:00 [INF] Route matched with {action = "LoginPost", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginPost(Task1.DTOs.LoginDTO) on controller Task1.Controllers.UsersController (Task1).
+2024-09-03 16:42:09.972 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__user_Username_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2024-09-03 16:42:10.001 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Role]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserID] = @__user_Id_0
+2024-09-03 16:42:10.016 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-03 16:42:10.027 +03:00 [INF] Executed action Task1.Controllers.UsersController.LoginPost (Task1) in 174.4092ms
+2024-09-03 16:42:10.027 +03:00 [INF] Executed endpoint 'Task1.Controllers.UsersController.LoginPost (Task1)'
+2024-09-03 16:42:10.027 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44349/api/Users/LoginPost - 200 null application/json; charset=utf-8 190.6698ms
+2024-09-03 16:42:11.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - null null
+2024-09-03 16:42:11.603 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:11.603 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:42:11.603 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category() on controller Task1.Controllers.CategoriesController (Task1).
+2024-09-03 16:42:11.608 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-09-03 16:42:11.608 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Task1.Models.Category, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 16:42:11.609 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 6.0899ms
+2024-09-03 16:42:11.609 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:42:11.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - 200 null application/json; charset=utf-8 7.3024ms
+2024-09-03 16:42:15.061 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 16:42:15.062 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:15.062 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - 204 null null 0.5081ms
+2024-09-03 16:42:15.063 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 16:42:15.063 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:15.065 +03:00 [INF] Executing endpoint 'Task1.Controllers.ProductsController.Product (Task1)'
+2024-09-03 16:42:15.065 +03:00 [INF] Route matched with {action = "Product", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Product() on controller Task1.Controllers.ProductsController (Task1).
+2024-09-03 16:42:15.069 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductImage], [p].[ProductName]
+FROM [Products] AS [p]
+ORDER BY [p].[ProductName] DESC
+2024-09-03 16:42:15.069 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+<TakeRangeFromEndIterator>d__281`1[[Task1.Models.Product, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 16:42:15.070 +03:00 [INF] Executed action Task1.Controllers.ProductsController.Product (Task1) in 5.5722ms
+2024-09-03 16:42:15.071 +03:00 [INF] Executed endpoint 'Task1.Controllers.ProductsController.Product (Task1)'
+2024-09-03 16:42:15.071 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - 200 null application/json; charset=utf-8 7.7467ms
+2024-09-03 16:42:41.776 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - null null
+2024-09-03 16:42:41.776 +03:00 [INF] CORS policy execution successful.
+2024-09-03 16:42:41.777 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:42:41.777 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category() on controller Task1.Controllers.CategoriesController (Task1).
+2024-09-03 16:42:41.778 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-09-03 16:42:41.779 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Task1.Models.Category, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 16:42:41.780 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 3.185ms
+2024-09-03 16:42:41.780 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 16:42:41.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - 200 null application/json; charset=utf-8 4.0413ms
+2024-09-03 17:15:44.287 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44349/api/Users/LoginPost - application/json 60
+2024-09-03 17:15:44.322 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:15:44.325 +03:00 [INF] Executing endpoint 'Task1.Controllers.UsersController.LoginPost (Task1)'
+2024-09-03 17:15:44.325 +03:00 [INF] Route matched with {action = "LoginPost", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginPost(Task1.DTOs.LoginDTO) on controller Task1.Controllers.UsersController (Task1).
+2024-09-03 17:15:44.381 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__user_Username_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2024-09-03 17:15:44.389 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Role]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserID] = @__user_Id_0
+2024-09-03 17:15:44.391 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-03 17:15:44.392 +03:00 [INF] Executed action Task1.Controllers.UsersController.LoginPost (Task1) in 64.6863ms
+2024-09-03 17:15:44.393 +03:00 [INF] Executed endpoint 'Task1.Controllers.UsersController.LoginPost (Task1)'
+2024-09-03 17:15:44.393 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44349/api/Users/LoginPost - 200 null application/json; charset=utf-8 109.4345ms
+2024-09-03 17:16:09.634 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 17:16:09.635 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:09.636 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - 204 null null 2.4941ms
+2024-09-03 17:16:09.641 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 17:16:09.641 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:09.642 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+ ---> Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(String encodedJson)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+   --- End of inner exception stack trace ---
+2024-09-03 17:16:09.642 +03:00 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2024-09-03 17:16:09.643 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-09-03 17:16:09.643 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-09-03 17:16:09.644 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - 401 null null 3.3261ms
+2024-09-03 17:16:22.205 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Users/LoginPost - null null
+2024-09-03 17:16:22.205 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:22.206 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Users/LoginPost - 204 null null 1.2694ms
+2024-09-03 17:16:22.218 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44349/api/Users/LoginPost - application/json 40
+2024-09-03 17:16:22.218 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:22.218 +03:00 [INF] Executing endpoint 'Task1.Controllers.UsersController.LoginPost (Task1)'
+2024-09-03 17:16:22.218 +03:00 [INF] Route matched with {action = "LoginPost", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginPost(Task1.DTOs.LoginDTO) on controller Task1.Controllers.UsersController (Task1).
+2024-09-03 17:16:22.246 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__user_Username_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__user_Username_0
+2024-09-03 17:16:22.255 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Role]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserID] = @__user_Id_0
+2024-09-03 17:16:22.256 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-09-03 17:16:22.257 +03:00 [INF] Executed action Task1.Controllers.UsersController.LoginPost (Task1) in 38.1928ms
+2024-09-03 17:16:22.257 +03:00 [INF] Executed endpoint 'Task1.Controllers.UsersController.LoginPost (Task1)'
+2024-09-03 17:16:22.257 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44349/api/Users/LoginPost - 200 null application/json; charset=utf-8 39.5175ms
+2024-09-03 17:16:24.307 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - null null
+2024-09-03 17:16:24.307 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:24.308 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 17:16:24.308 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category() on controller Task1.Controllers.CategoriesController (Task1).
+2024-09-03 17:16:24.318 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-09-03 17:16:24.319 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Task1.Models.Category, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 17:16:24.320 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 12.3432ms
+2024-09-03 17:16:24.320 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 17:16:24.321 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - 200 null application/json; charset=utf-8 14.1144ms
+2024-09-03 17:16:26.629 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 17:16:26.629 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:26.630 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - 204 null null 0.678ms
+2024-09-03 17:16:26.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 17:16:26.633 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:26.634 +03:00 [INF] Executing endpoint 'Task1.Controllers.ProductsController.Product (Task1)'
+2024-09-03 17:16:26.634 +03:00 [INF] Route matched with {action = "Product", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Product() on controller Task1.Controllers.ProductsController (Task1).
+2024-09-03 17:16:26.643 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductImage], [p].[ProductName]
+FROM [Products] AS [p]
+ORDER BY [p].[ProductName] DESC
+2024-09-03 17:16:26.643 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+<TakeRangeFromEndIterator>d__281`1[[Task1.Models.Product, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 17:16:26.644 +03:00 [INF] Executed action Task1.Controllers.ProductsController.Product (Task1) in 9.8888ms
+2024-09-03 17:16:26.644 +03:00 [INF] Executed endpoint 'Task1.Controllers.ProductsController.Product (Task1)'
+2024-09-03 17:16:26.645 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Products/AllProducts/Product - 200 null application/json; charset=utf-8 12.6908ms
+2024-09-03 17:16:32.115 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - null null
+2024-09-03 17:16:32.117 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:16:32.117 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44349/api/Products/AllProducts/Product - 204 null null 2.6947ms
+2024-09-03 17:17:16.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - null null
+2024-09-03 17:17:16.558 +03:00 [INF] CORS policy execution successful.
+2024-09-03 17:17:16.560 +03:00 [INF] Executing endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 17:17:16.560 +03:00 [INF] Route matched with {action = "Category", controller = "Categories"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Category() on controller Task1.Controllers.CategoriesController (Task1).
+2024-09-03 17:17:16.570 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-09-03 17:17:16.573 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Task1.Models.Category, Task1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-03 17:17:16.575 +03:00 [INF] Executed action Task1.Controllers.CategoriesController.Category (Task1) in 14.4135ms
+2024-09-03 17:17:16.575 +03:00 [INF] Executed endpoint 'Task1.Controllers.CategoriesController.Category (Task1)'
+2024-09-03 17:17:16.575 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44349/api/Categories/AllCategories/Category - 200 null application/json; charset=utf-8 28.1521ms
